@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - TechHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>TechHub</h2>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </nav>
+
+    <section class="cart-page">
+        <h1>Shopping Cart</h1>
+        <p>Review the products you have added to your cart.</p>
+
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+
+            <tr>
+                <td>iPhone 16</td>
+                <td>$999</td>
+                <td>1</td>
+                <td>$999</td>
+            </tr>
+
+            <tr>
+                <td>AirPods Pro</td>
+                <td>$249</td>
+                <td>1</td>
+                <td>$249</td>
+            </tr>
+        </table>
+
+        <div class="summary-card">
+            <h2>Order Summary</h2>
+
+            <p>Subtotal: $1248</p>
+            <p>Shipping: $20</p>
+            <p><strong>Grand Total: $1268</strong></p>
+
+            <button onclick="discount()">Proceed to Checkout</button>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <footer>
+        <h3>TechHub</h3>
+        <p>Your trusted destination for modern gadgets and accessories.</p>
+
+        <p>Email: info@techhub.com</p>
+        <p>Phone: +92 300 1234567</p>
+        <p>Address: Karachi, Pakistan</p>
+
+        <p>&copy; 2026 TechHub. All Rights Reserved.</p>
+    </footer>
+
+    <div>
+        <a href="#top" class="back-to-top">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

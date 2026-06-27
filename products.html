@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - TechHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h2>TechHub</h2>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">
+                Cart (<span id="cartCount">0</span>)
+            </a>
+        </div>
+    </nav>
+
+    <section class="product-page">
+        <h1>Our Products</h1>
+        <p>
+            Browse our collection of premium gadgets, laptops, smartphones and accessories.
+        </p>
+        <p id="totalProducts"></p>
+    </section>
+
+    <div class="filter-section">
+
+        <input type="text" id="searchBox" placeholder="Search Products" onkeyup="searchProduct()">
+
+    </div>
+
+    <div class="products-container">
+        <div class="product-card" id="iphone">
+            <img src="./images/iphone.jpg" alt="">
+            <h3>iPhone 16</h3>
+            <p>Latest Apple smartphone with advanced camera features.</p>
+            <h4>$999</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product-card" id="samsung">
+            <img src="./images/samsung.jpg" alt="">
+            <h3>Samsung Galaxy S25</h3>
+            <p>Powerful Android smartphone with premium performance.</p>
+            <h4>$899</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product-card" id="macbook">
+            <img src="./images/laptop.jpg" alt="">
+            <h3>MacBook Air</h3>
+            <p>Lightweight laptop for work and creativity.</p>
+            <h4>$1199</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product-card" id="airpods">
+            <img src="./images/ear buds.jpg" alt="">
+            <h3>AirPods Pro</h3>
+            <p>Wireless earbuds with crystal clear sound.</p>
+            <h4>$249</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product-card" id="dell">
+            <img src="./images/dell xps.jpg" alt="Dell XPS">
+            <h3>Dell XPS</h3>
+            <p>Powerful laptop designed for professionals, students, and multitasking users.</p>
+            <h4>$1099</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product-card" id="watch">
+            <img src="./images/smart watch.jpg" alt="Smart Watch">
+            <h3>Smart Watch</h3>
+            <p>Track your fitness, monitor health, and stay connected throughout the day.</p>
+            <h4>$199</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product-card" id="mouse">
+            <img src="./images/gaming mouse.jpg" alt="Gaming Mouse">
+            <h3>Gaming Mouse</h3>
+            <p>High-precision gaming mouse with customizable buttons and RGB lighting.</p>
+            <h4>$79</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product-card" id="keyboard">
+            <img src="./images/keyboard.jpg" alt="Mechanical Keyboard">
+            <h3>Mechanical Keyboard</h3>
+            <p>Responsive keyboard with durable switches for gaming and productivity.</p>
+            <h4>$129</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product-card" id="oneplus">
+            <img src="./images/mobile 1.jpg" alt="">
+            <h3>OnePlus 13</h3>
+            <p>Fast performance smartphone with premium design and smooth display.</p>
+            <h4>$799</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product-card" id="wirelessmouse">
+            <img src="./images/mouse.jpg" alt="">
+            <h3>Wireless Mouse</h3>
+            <p>Comfortable wireless mouse suitable for work and everyday use.</p>
+            <h4>$49</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product-card" id="pixel">
+            <img src="./images/mobile 2.jpg" alt="">
+            <h3>Google Pixel 10</h3>
+            <p>Smartphone with excellent camera quality and pure Android experience.</p>
+            <h4>$899</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product-card" id="rgbkeyboard">
+            <img src="./images/keyboard 2.jpg" alt="">
+            <h3>RGB Keyboard</h3>
+            <p>Stylish keyboard with colorful RGB lighting and responsive keys.</p>
+            <h4>$99</h4>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+    </div>
+    <footer>
+        <h3>TechHub</h3>
+        <p>Your trusted destination for modern gadgets and accessories.</p>
+
+        <p>Email: info@techhub.com</p>
+        <p>Phone: +92 300 1234567</p>
+        <p>Address: Karachi, Pakistan</p>
+
+        <p>&copy; 2026 TechHub. All Rights Reserved.</p>
+    </footer>
+
+    <div>
+        <a href="#top" class="back-to-top">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
